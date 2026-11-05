@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./Logo";
 import Container from "./Container";
 
@@ -5,7 +6,9 @@ export default function Header() {
   return (
     <header className="py-4 ">
       <Container className="flex justify-between items-center">
-        <Logo />
+        <Link href="/" aria-label="Wally Homepage">
+          <Logo />
+        </Link>
 
         <div className="flex gap-4 items-center">
           <span>Alex</span>
